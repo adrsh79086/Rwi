@@ -1,0 +1,38 @@
+import java.util.LinkedList;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        // Creating a LinkedList to store strings
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        // Adding elements to the LinkedList
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Cherry");
+
+        // Printing the LinkedList
+        System.out.println("LinkedList: " + linkedList);
+
+        // Adding an element at the beginning of the LinkedList
+        linkedList.addFirst("Orange");
+        System.out.println("LinkedList after adding Orange at the beginning: " + linkedList);
+
+        // Adding an element at the end of the LinkedList
+        linkedList.addLast("Grapes");
+        System.out.println("LinkedList after adding Grapes at the end: " + linkedList);
+
+        // Removing the first element of the LinkedList
+        linkedList.removeFirst();
+        System.out.println("LinkedList after removing the first element: " + linkedList);
+
+        // Removing the last element of the LinkedList
+        linkedList.removeLast();
+        System.out.println("LinkedList after removing the last element: " + linkedList);
+
+        // Getting the first element of the LinkedList
+        System.out.println("First element of the LinkedList: " + linkedList.getFirst());
+
+        // Getting the last element of the LinkedList
+        System.out.println("Last element of the LinkedList: " + linkedList.getLast());
+    }
+}
