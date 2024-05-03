@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Creating an ArrayList to store integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        // Adding elements to the ArrayList
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        // Printing the ArrayList
+        System.out.println("ArrayList: " + numbers);
+
+        // Accessing elements by index
+        System.out.println("Element at index 1: " + numbers.get(1));
+
+        // Removing element at index 2
+        numbers.remove(2);
+        System.out.println("ArrayList after removing element at index 2: " + numbers);
+
+        // Iterating over the ArrayList using a for-each loop
+        System.out.println("Iterating over the ArrayList:");
+        for (Integer num : numbers) {
+            System.out.println(num);
+        }
+
+        // Checking if the ArrayList contains a certain element
+        int searchElement = 20;
+        if (numbers.contains(searchElement)) {
+            System.out.println("ArrayList contains " + searchElement);
+        } else {
+            System.out.println("ArrayList does not contain " + searchElement);
+        }
+
+        // Getting the size of the ArrayList
+        System.out.println("Size of ArrayList: " + numbers.size());
+
+        
+    }
+}
